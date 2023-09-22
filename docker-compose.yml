@@ -6,14 +6,12 @@ services:
     ports:
       - 80:80
     volumes:
-      - conf:/etc/nginx/conf.d/
       - static_files:/home/app/staticfiles
 
 volumes:
   static_files:
     name: menu_osseloa_web
     external: true
-  conf:
   
   # dns:
   #   build:
