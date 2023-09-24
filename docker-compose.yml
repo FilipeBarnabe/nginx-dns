@@ -9,17 +9,17 @@ services:
       - 80:80
     volumes:
       - static_files:/home/app/staticfiles
-  dns:
-    build:
-      context: ./dns/
-      dockerfile: Dockerfile
-    pull_policy: build
-    network_mode: bridge
-    restart: always
-    ports:
-      - 53:53
-      - 53:53/udp
-    command: named -c /etc/bind/named.conf -g -u named
+  # dns:
+  #   build:
+  #     context: ./dns/
+  #     dockerfile: Dockerfile
+  #   pull_policy: build
+  #   network_mode: bridge
+  #   restart: always
+  #   ports:
+  #     - 53:53
+  #     - 53:53/udp
+  #   command: named -c /etc/bind/named.conf -g -u named
 
 volumes:
   static_files:
