@@ -2,7 +2,7 @@ services:
   nginx:
     environment:
       - SERVER_IP=$CONTAINER_IP
-      - SERVER_PORT=$COMTAINER_PORT
+      - SERVER_PORT=$CONTAINER_PORT
     build:
       context: ./nginx/
       dockerfile: Dockerfile
