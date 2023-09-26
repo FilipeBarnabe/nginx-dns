@@ -7,5 +7,5 @@ $TTL 86400
                     3600)    ; Negative Cache TTL
 
 @       IN      NS      main.com.
-@       IN      A       127.0.0.1
-www     IN      A       127.0.0.1
+@       IN      A       192.168.68.115
+www     IN      A       192.168.68.115
