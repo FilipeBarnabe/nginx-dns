@@ -13,7 +13,7 @@ services:
       - 80:80
     volumes:
       - static_files:/home/app/staticfiles
-      - media_files:/home/app/mediafiles
+      # - media_files:/home/app/mediafiles
   
   dns:
     build:
@@ -31,6 +31,6 @@ volumes:
   static_files:
     name: menu_osseloa_web
     external: true
-  media_files:
-    name: menu_osseloa_media
-    external: true
+  # media_files:
+  #   name: menu_osseloa_media
+  #   external: true
