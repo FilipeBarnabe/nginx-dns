@@ -7,5 +7,5 @@ $TTL 86400
                     3600)    ; Negative Cache TTL
 
 @       IN      NS      osseloa.com.
-@       IN      A       192.168.1.154
-www     IN      A       192.168.1.154
+@       IN      A       192.168.1.67
+www     IN      A       192.168.1.67
