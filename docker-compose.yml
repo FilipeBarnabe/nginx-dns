@@ -8,7 +8,8 @@ services:
       context: ./nginx/
       dockerfile: Dockerfile
     pull_policy: build
-    network_mode: bridge
+    networks:
+      - menu
     ports:
       - 80:80
     volumes:
@@ -34,3 +35,9 @@ volumes:
   media_files:
     name: menu_osseloa_media
     external: true
+
+networks:
+  menu:
+    name: menu_network
+    external:
+      true
